@@ -11,16 +11,16 @@ import java.io.IOException;
 public class MainWindowController extends Application {
     private static Stage MainMenu;
 
-    public Stage getMenuStage()
+    public static void closeMenuStage()
     {
-        return this.MainMenu;
+        MainMenu.close();
     }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainWindowController.class.getResource("MainWindow.fxml"));
         Scene scene = new Scene(loader.load());
-        this.MainMenu = primaryStage;
+        MainMenu = primaryStage;
         primaryStage.setScene(scene);
         primaryStage.show();
     }
