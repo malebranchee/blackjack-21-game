@@ -9,22 +9,15 @@ import java.io.IOException;
 
 
 public class MainWindowController extends Application {
-    private static Stage MainMenu;
-
-    public static void closeMenuStage()
-    {
-        MainMenu.close();
-    }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainWindowController.class.getResource("MainWindow.fxml"));
         Scene scene = new Scene(loader.load());
-        MainMenu = primaryStage;
+        Game.mainMenuWindow = primaryStage;
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch();
