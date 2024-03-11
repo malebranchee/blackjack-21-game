@@ -7,9 +7,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
+// Application launch button
 public class MainWindowController extends Application {
-
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainWindowController.class.getResource("MainWindow.fxml"));
@@ -18,7 +17,6 @@ public class MainWindowController extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
     public static void main(String[] args) {
         launch();
     }
