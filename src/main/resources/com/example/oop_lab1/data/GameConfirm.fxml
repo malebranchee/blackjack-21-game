@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" fx:id="anchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_lab1.Game">
+      <DialogPane id="game_confirm" fx:id="game_confirm" contentText="Прежде всего, для игры нужно выбрать банкира. Данный человек, будет вести точный подсчет денег имеющегося банка, а также производить раздачу карт. Он будет контролировать игровой процесс всех участников, а также собственный. В качестве банкира, может быть выбран любой игрок. При желании, банкира можно менять или оставлять одного и того же человека. Еще одна роль банкира – играть роль контролера, а еще разъяснять правила новичкам.Основной принцип игры: банкир назначает любую сумму банка, все игроки пытаются заполучить эти деньги. Каждый из участников сообщает, на какую сумму банка готов раскошелиться. Главное – ставка не должна превышать ранее определенного банка. При наборе 21 очка, игрок побеждает банкира. Если уступаете, тогда ставка пополняет сумму банка.Собрать нужное количество баллов за минимальное количество ходов, получается не часто." headerText="Начать игру?" layoutX="29.0" layoutY="26.0" prefHeight="269.0" prefWidth="542.0" style="-fx-background-color: #ffffff; -fx-border-style: #000000;">
+
+      </DialogPane>
+      <Button layoutX="66.0" layoutY="339.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="165.0" text="НАЧАТЬ" onAction="#gameStart" />
+      <Button layoutX="364.0" layoutY="335.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="165.0" text="НЕТ" onAction="#mainMenuExit" />
+</AnchorPane>

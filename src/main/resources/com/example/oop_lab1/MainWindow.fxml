@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="407" prefWidth="600" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_lab1.PlayButtonController">
+<Pane prefHeight="407" prefWidth="600" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_lab1.Game">
 <AnchorPane>
 
     <ImageView blendMode="MULTIPLY" fitHeight="407.0" fitWidth="605.0" nodeOrientation="INHERIT" pickOnBounds="true">
